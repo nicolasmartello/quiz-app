@@ -37,7 +37,7 @@ const QuestionsContainer = ({
   useEffect(() => {
     const interval = setTimeout(() => {
       setSecCounter(secCounter + 1);
-      if (secCounter === 0 && questionLevel > 0) {
+      if (secCounter === 0) {
         setHighlightAnswer(false);
       }
       
