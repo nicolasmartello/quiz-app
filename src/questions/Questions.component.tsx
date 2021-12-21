@@ -2,7 +2,6 @@ import React, { memo } from 'react';
 import { Option } from '../data/data.type.d';
 
 type QuestionComponentProps = Option & {
-  index: number;
   highlight: boolean;
   onSelectAnswer: (isCorrectAnswer: boolean) => void;
 };
@@ -10,7 +9,6 @@ type QuestionComponentProps = Option & {
 const QuestionComponent = ({
   text,
   correct,
-  index,
   highlight,
   onSelectAnswer
 }: QuestionComponentProps) => {

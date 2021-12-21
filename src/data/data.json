@@ -1,25 +1,35 @@
 {
-  "title": "Trivia de prueba",
-  "image": "https://48tools.com/wp-content/uploads/2015/09/shortlink.png",
+  "title": "Movies - quiz",
+  "image": "https://play-lh.googleusercontent.com/Vee8sq_MaVZO9kvdqeo_c89r_l94Eth8WHdQS8SorRSigfeJ2CaA5h0iNXEt1I8GssQ=s180-rw",
   "questions": [
     {
-      "text": "Pregunta 1",
-      "image": "https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg",
-      "lifetimeSeconds": 10,
+      "text": "Alien 2 - What was the name of the main character?",
+      "image": "https://image.tmdb.org/t/p/w185/3QU9EP8BFLnTh6w9ycDSCvhqbRU.jpg",
+      "lifetimeSeconds": 5,
       "options": [
-        { "text": "Opcion1", "correct": true },
-        { "text": "Opcion2", "correct": false },
-        { "text": "Opcion3", "correct": true }
+        { "text": "Kenia", "correct": false },
+        { "text": "Sam", "correct": false },
+        { "text": "Ripley", "correct": true }
       ]
     },
     {
-      "text": "Pregunta 2",
-      "image": "https://filedn.com/ltOdFv1aqz1YIFhf4gTY8D7/ingus-info/BLOGS/Photography-stocks3/stock-photography-slider.jpg",
+      "text": "Die hard - what was the name of the building",
+      "image": "https://billpetro.com/wp-content/uploads/2018/12/die-hard-203x300.jpg",
       "lifetimeSeconds": 5,
       "options": [
-        { "text": "Opcion1", "correct": true },
-        { "text": "Opcion2", "correct": false },
-        { "text": "Opcion3", "correct": false }
+        { "text": "Nakatomi Plaza", "correct": true },
+        { "text": "Taj Mahal", "correct": false },
+        { "text": "The Guggenheim", "correct": false }
+      ]
+    },
+    {
+      "text": "Rambo - what's the name of the actor?",
+      "image": "https://static.displate.com/280x392/displate/2020-12-23/9091523c128b283f1d4db24cc3baf86b_00f5b74b8647b082203466fb7675ae73.jpg",
+      "lifetimeSeconds": 8,
+      "options": [
+        { "text": "Jean-Claude Van Damme", "correct": false },
+        { "text": "Silverster Stallone", "correct": true },
+        { "text": "Arnold Schwarzenegger", "correct": false }
       ]
     }
   ]
