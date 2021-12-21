@@ -23,11 +23,11 @@ const MessageComponent = ({
   }
 
   return (
-    <div>
-      <span>{message}</span>
+    <div className="wrapper">
+      <h3>{message}</h3>
       <div>
-        <span>{answers.length}</span>/
-        <span>{fails}</span>
+        <strong>{fails}</strong>/
+        <strong>{answers.length}</strong>
       </div>
     </div>
   );

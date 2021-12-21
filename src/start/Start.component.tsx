@@ -11,8 +11,8 @@ const Start = ({
   image,
   onGameStart
 }: StartProps) => (
-  <div>
-    <span>{title}</span>
+  <div className="wrapper">
+    <h2>{title}</h2>
     {image && (<img src={image} alt={title} />)}
     <button onClick={onGameStart}>Lets go!!</button>
   </div>

@@ -8,7 +8,7 @@ const QuestionsHeader = ({
   text,
 }: QuestionsHeaderProps) => (
   <header>
-    <h3>{text}</h3>
+    <p>{text}</p>
     <img src={image} alt={text} />
   </header>
 );  

@@ -8,10 +8,14 @@ const App = () => {
   const [gameStatus, setGameStatus] = useState(false);
 
   if (gameStatus) {
-    return (<Questions questions={data.questions} />);
+    return (
+      <div className="main-container">
+        <Questions questions={data.questions} />
+      </div>
+    );
   }
   return (
-    <div>
+    <div className="main-container">
       <Start title={data.title} image={data.image} onGameStart={() => setGameStatus(true)} />
     </div>
   );

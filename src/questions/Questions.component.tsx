@@ -12,12 +12,12 @@ const QuestionComponent = ({
   highlight,
   onSelectAnswer
 }: QuestionComponentProps) => {
+  let className = 'question-text';
+  if (highlight && correct) {
+    className += ' highlight';
+  }
 
-  return (
-    <div>
-      <div className={highlight && correct ? 'highlight' : ''} onClick={() => onSelectAnswer(correct)}>{text}</div>
-    </div>
-  );
+  return (<div className={className} onClick={() => onSelectAnswer(correct)}>{text}</div>);
 };
 
 export default memo(QuestionComponent);

@@ -15,7 +15,7 @@
     {
       "text": "Die hard - what was the name of the building",
       "image": "https://billpetro.com/wp-content/uploads/2018/12/die-hard-203x300.jpg",
-      "lifetimeSeconds": 5,
+      "lifetimeSeconds": 11,
       "options": [
         { "text": "Nakatomi Plaza", "correct": true },
         { "text": "Taj Mahal", "correct": false },
