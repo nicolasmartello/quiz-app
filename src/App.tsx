@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Start from './start';
+import data from './data/data.json';
+import Questions from './questions';
 
-function App() {
+const App = () => {
+  const [gameStatus, setGameStatus] = useState(false);
+
+  if (gameStatus) {
+    return (<Questions questions={data.questions} />);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Start title={data.title} image={data.image} onGameStart={() => setGameStatus(true)} />
     </div>
   );
 }
