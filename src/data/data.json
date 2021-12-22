@@ -1,0 +1,36 @@
+{
+  "title": "Movies - quiz",
+  "image": "https://play-lh.googleusercontent.com/Vee8sq_MaVZO9kvdqeo_c89r_l94Eth8WHdQS8SorRSigfeJ2CaA5h0iNXEt1I8GssQ=s180-rw",
+  "questions": [
+    {
+      "text": "Alien 2 - What was the name of the main character?",
+      "image": "https://image.tmdb.org/t/p/w185/3QU9EP8BFLnTh6w9ycDSCvhqbRU.jpg",
+      "lifetimeSeconds": 5,
+      "options": [
+        { "text": "Kenia", "correct": false },
+        { "text": "Sam", "correct": false },
+        { "text": "Ripley", "correct": true }
+      ]
+    },
+    {
+      "text": "Die hard - what was the name of the building",
+      "image": "https://billpetro.com/wp-content/uploads/2018/12/die-hard-203x300.jpg",
+      "lifetimeSeconds": 11,
+      "options": [
+        { "text": "Nakatomi Plaza", "correct": true },
+        { "text": "Taj Mahal", "correct": false },
+        { "text": "The Guggenheim", "correct": false }
+      ]
+    },
+    {
+      "text": "Rambo - what's the name of the actor?",
+      "image": "https://static.displate.com/280x392/displate/2020-12-23/9091523c128b283f1d4db24cc3baf86b_00f5b74b8647b082203466fb7675ae73.jpg",
+      "lifetimeSeconds": 8,
+      "options": [
+        { "text": "Jean-Claude Van Damme", "correct": false },
+        { "text": "Silverster Stallone", "correct": true },
+        { "text": "Arnold Schwarzenegger", "correct": false }
+      ]
+    }
+  ]
+}
