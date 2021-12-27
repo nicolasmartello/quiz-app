@@ -1,4 +1,5 @@
 import React from 'react';
+import { Wrapper } from '../App.styles';
 
 type StartProps = {
   title: string;
@@ -11,11 +12,11 @@ const Start = ({
   image,
   onGameStart
 }: StartProps) => (
-  <div className="wrapper">
+  <Wrapper>
     <h2>{title}</h2>
     {image && (<img src={image} alt={title} />)}
     <button onClick={onGameStart}>Lets go!!</button>
-  </div>
+  </Wrapper>
 );
 
 export default Start;
