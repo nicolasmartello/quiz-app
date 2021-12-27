@@ -58,12 +58,12 @@ export const ImageContainer = styled.div`
   ${Breakpoints.sm} {
     width: 200px;
     height: auto;
-  }
-  ${Breakpoints.landscape} {
-    min-height: 30px;
-    width: auto;
-    img {
-      width: 30%;
+    ${Breakpoints.landscape} {
+      min-height: 30px;
+      width: auto;
+      img {
+        width: 30%;
+      }
     }
   }
 `;
