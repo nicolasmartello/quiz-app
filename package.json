@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test jest --env=jsdom --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -42,5 +42,14 @@
   },
   "devDependencies": {
     "jest-watch-typeahead": "^0.6.5"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!**/node_modules/**",
+      "!**/build/**",
+      "!src/reportWebVitals.ts",
+      "!src/index.tsx"
+    ]
   }
 }
