@@ -1,5 +1,6 @@
 import React, { memo } from 'react';
 import { Option } from '../data/data.type.d';
+import { QuestionsBlock } from './Questions.styles';
 
 type QuestionComponentProps = Option & {
   highlight: boolean;
@@ -11,13 +12,13 @@ const QuestionComponent = ({
   correct,
   highlight,
   onSelectAnswer
-}: QuestionComponentProps) => {
-  let className = 'question-text';
-  if (highlight && correct) {
-    className += ' highlight';
-  }
-
-  return (<div className={className} onClick={() => onSelectAnswer(correct)}>{text}</div>);
-};
+}: QuestionComponentProps) => (
+  <QuestionsBlock
+    highlight={highlight && correct}
+    onClick={() => onSelectAnswer(correct)}
+  >
+    {text}
+  </QuestionsBlock>
+);
 
 export default memo(QuestionComponent);

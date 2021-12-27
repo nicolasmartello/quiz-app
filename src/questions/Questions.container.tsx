@@ -4,6 +4,7 @@ import QuestionsComponent from './Questions.component';
 import QuestionsHeader from './Questions.header.component';
 import MessageComponent from '../message';
 import TimerComponent from '../timer';
+import { Wrapper } from '../App.styles';
 
 type QuestionsContainerProps = {
   questions: Question[];
@@ -61,7 +62,7 @@ const QuestionsContainer = ({
   }
 
   return (
-    <div className="wrapper">
+    <Wrapper>
       <TimerComponent seconds={questions[questionLevel].lifetimeSeconds - secCounter} />
       <QuestionsHeader
         text={questions[questionLevel].text}
@@ -76,7 +77,7 @@ const QuestionsContainer = ({
           highlight={highlightAnswer}
         />
       ))}
-    </div>
+    </Wrapper>
   );
 };
 

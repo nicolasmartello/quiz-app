@@ -1,1 +1,1 @@
-export { default } from './timer.component';
+export { default } from './Timer.component';

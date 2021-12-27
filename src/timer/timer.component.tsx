@@ -1,4 +1,5 @@
 import React from 'react';
+import { TimerContainer } from './Timer.styles';
 
 type TimerProps = {
   seconds: number;
@@ -7,7 +8,7 @@ type TimerProps = {
 const TimerComponent = ({
   seconds
 }: TimerProps) => (
-  <div className="timer"><span>{seconds}</span></div>
+  <TimerContainer><span>{seconds}</span></TimerContainer>
 );
 
 export default TimerComponent;
