@@ -10,8 +10,6 @@ const MessageComponent = ({
   if (answers.length < 1) {
     return null;
   }
-
-  let message = 'Congrats you won !!';
   let fails = 0;
   for(let i=0; i < answers.length; i++) {
     if (!answers[i]) {
@@ -19,16 +17,20 @@ const MessageComponent = ({
     }
   }
   if (fails > 0) {
-    message = `You failed in ${fails} answers, try again F5!`;
+    return (
+      <div className="wrapper">
+        <h3>{`You failed in ${fails} answers, try again F5!`}</h3>
+        {<div>
+          <strong>{fails}</strong>/
+          <strong>{answers.length}</strong>
+        </div>}
+      </div>
+    );
   }
 
   return (
     <div className="wrapper">
-      <h3>{message}</h3>
-      <div>
-        <strong>{fails}</strong>/
-        <strong>{answers.length}</strong>
-      </div>
+      <h3>Congrats you won !!</h3>
     </div>
   );
 };
