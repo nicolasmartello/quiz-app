@@ -3,7 +3,7 @@ import { Question, Option } from '../data/data.type.d';
 import QuestionsComponent from './Questions.component';
 import QuestionsHeader from './Questions.header.component';
 import MessageComponent from '../message';
-import TimerComponent from '../timer';
+import TimerComponent from '../timer/Timer.component';
 import { Wrapper } from '../App.styles';
 
 type QuestionsContainerProps = {
